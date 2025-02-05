@@ -130,8 +130,19 @@ body {
   transition: color 0.3s;
 }
 
-.nav-link:hover {
-  color: #6ea8fe;
+.nav-item .nav-link:hover {
+  color: #6ea8fe !important; /* 우선순위를 높이기 위해 important 추가 */
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fafafa !important;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #6ea8fe !important;
 }
 
 /* 인트로 섹션 */
