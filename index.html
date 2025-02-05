@@ -17,33 +17,65 @@
     tabindex="0"
   >
     <div class="main-container">
-      <!-- 내비게이션 바 -->
-      <header class="navbar-container" id="navbar">
-        <div class="logo">
-          <img
-            src="./assets/리틀펫 가로 로고.svg"
-            alt="리틀펫 로고"
-            class="logo-text"
-          />
-        </div>
-        <nav class="menu">
-          <a href="#" class="menu-item">홈</a>
-          <a href="#home" class="menu-item">개요</a>
-          <a href="#features" class="menu-item">기능 소개</a>
-          <a
-            href="https://github.com"
-            class="menu-item"
-            target="_blank"
-          >
+      <!-- 내비게이션 -->
+      <header class="navbar-container navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <!-- 로고 -->
+          <a class="navbar-brand logo" href="#">
             <img
-              src="./assets/GitHub.svg"
-              alt="GitHub 아이콘"
-              class="menu-icon"
+              src="./assets/리틀펫 가로 로고.svg"
+              alt="리틀펫 로고"
+              class="logo-text"
             />
-            GitHub
           </a>
-          <a href="#quick-access" class="menu-item">리틀펫 바로 가기</a>
-        </nav>
+
+          <!-- 토글 버튼 -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="메뉴 열기"
+          >
+            <span class="navbar-toggler-icon custom-toggler-icon"></span>
+          </button>
+
+          <!-- 메뉴 -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link menu-item" href="#">홈</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item" href="#home">개요</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item" href="#features">기능 소개</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu-item"
+                  href="https://github.com"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/GitHub.svg"
+                    alt="GitHub 아이콘"
+                    class="menu-icon"
+                  />
+                  GitHub
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item" href="#quick-access"
+                  >리틀펫 바로 가기</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <!-- 인트로 섹션 -->

@@ -61,49 +61,76 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* 내비게이션 메뉴 */
+/* 내비게이션 스타일 */
 .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 상하 중앙 정렬 */
   position: sticky;
   top: 0;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 96px;
-  background: #262627;
+  background-color: #262627;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 12px 24px;
 }
 
-.logo {
+/* 로고 스타일 */
+.navbar-brand {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  align-items: center; /* 로고 상하 중앙 정렬 */
 }
 
-.logo-icon {
-  width: 24px;
-  height: auto;
+/* 로고 크기 조정 */
+.navbar-brand img {
+  height: 24x; /* 로고 크기 줄이기 */
+  width: auto;
 }
 
-.menu {
+/* 토글 버튼 스타일 */
+.navbar-toggler {
+  border: none;
+  padding: 4px 8px; /* 버튼의 패딩 줄이기 */
   display: flex;
-  gap: 24px;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 상하 중앙 정렬 */
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #fafafa;
+/* 토글 아이콘 크기 조정 */
+.navbar-toggler-icon.custom-toggler-icon {
+  background-image: none;
+  background-color: #fafafa;
+  width: 20px; /* 너비 줄이기 */
+  height: 2px; /* 높이 줄이기 */
+  position: relative;
+}
+
+/* 토글 아이콘 가로줄 크기 조정 */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px; /* 너비를 아이콘과 동일하게 */
+  height: 2px; /* 높이 조정 */
+  background-color: #fafafa;
+}
+
+.navbar-toggler-icon::before {
+  top: -6px; /* 간격 줄이기 */
+}
+
+.navbar-toggler-icon::after {
+  top: 6px; /* 간격 줄이기 */
+}
+/* 메뉴 아이템 스타일 */
+.nav-link {
+  color: #fafafa !important; /* 모든 메뉴 목록 흰색으로 설정 */
   font-size: 16px;
   font-weight: 600;
-  line-height: 35px;
-  word-wrap: break-word;
-  text-decoration: none;
   transition: color 0.3s;
 }
 
-.menu-item:hover {
+.nav-link:hover {
   color: #6ea8fe;
 }
 
