@@ -30,7 +30,11 @@
           <a href="#" class="menu-item">홈</a>
           <a href="#home" class="menu-item">개요</a>
           <a href="#features" class="menu-item">기능 소개</a>
-          <a href="https://github.com" class="menu-item" target="_blank">
+          <a
+            href="https://github.com"
+            class="menu-item"
+            target="_blank"
+          >
             <img
               src="./assets/GitHub.svg"
               alt="GitHub 아이콘"
@@ -55,21 +59,24 @@
         </div>
       </section>
 
-      <!-- 주요 기능 섹션 -->
+      <!-- 기능 소개 섹션 -->
       <section id="overview" class="feature-section">
-        <div class="feature-text">
+        <div class="feature-text fade-in">
           <h2>
-            당신의 반려 소동물을 위한
+            당신의 반려 소동물을 위한 <br />
             <span class="highlight-text">최적의</span> 공간,
           </h2>
         </div>
-        <img src="./assets/2page목업.svg" alt="2페이지 목업" />
+        <img
+          src="./assets/2page목업.svg"
+          alt="2페이지 목업"
+          class="feature-image"
+        />
       </section>
 
-      <!-- 기능 설명 섹션 -->
       <!-- 커뮤니티 섹션 -->
       <section id="features" class="description-section bg-primary text-light">
-        <div class="description-text">
+        <div class="description-text fade-in">
           <h2>함께하는 이들이 있으니까,</h2>
           <p>
             초보 반려인을 위한 관리 방법 가이드부터 <br />
@@ -88,7 +95,7 @@
           alt="4페이지 목업"
           class="health-image"
         />
-        <div class="health-record-text">
+        <div class="health-record-text fade-in">
           <h2>매일 매일 반려동물의<br />건강을 기록해요!</h2>
           <p>
             반려동물의 상태를 꼼꼼하게 기록하세요. <br />
@@ -101,7 +108,7 @@
 
       <!-- 병원 찾기 섹션 -->
       <section class="hospital-section bg-primary text-light">
-        <div class="description-text">
+        <div class="description-text fade-in">
           <h2>근처 소동물 전문 병원을<br />바로바로 찾아보세요!</h2>
           <p>
             반려동물이 아플 때, 소동물 전문 병원의 위치와 <br />
@@ -116,7 +123,7 @@
       <!-- 팀 소개 섹션 -->
       <section class="team-section">
         <div class="team-header">
-          <div class="team-logo-group">
+          <div class="team-logo-group fade-in">
             <img src="./assets/로고.svg" alt="로고 아이콘" class="team-logo" />
             <h1 class="team-title">
               리틀<span class="text-secondary">펫</span>
@@ -134,7 +141,7 @@
           />
         </div>
 
-        <div class="team-details">
+        <div class="team-details fade-in">
           <div class="team-stack">
             <h2 class="stack-title">Development Stack</h2>
             <div class="stack-item">
@@ -156,6 +163,27 @@
         </div>
       </section>
     </div>
+
+    <!-- 스크롤 시 문구가 서서히 나타남 -->
+    <script>
+      // 스크롤 시 문구에 나타나는 효과 적용
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          { threshold: 0.1 } // 문구가 10% 보일 때 트리거
+        );
+
+        // 모든 .fade-in 요소 감시
+        const fadeInElements = document.querySelectorAll(".fade-in");
+        fadeInElements.forEach((el) => observer.observe(el));
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
