@@ -99,7 +99,7 @@
       <!-- 인트로 섹션 -->
       <section id="home" class="intro-section">
         <div class="intro-image">
-          <img src="./assets/1page목업.svg" alt="1페이지 목업" />
+          <img src="./assets/1page목업.svg" alt="1페이지 목업" class="floating bounce-in" />
         </div>
         <div class="intro-text">
           <h1>
@@ -135,7 +135,7 @@
           </p>
           <button class="btn btn-light">→ 자세히 보기</button>
         </div>
-        <img src="./assets/3page목업.svg" alt="3페이지 목업" />
+        <img src="./assets/3page목업.svg" alt="3페이지 목업" class="floating bounce-in"/>
       </section>
 
       <!-- 건강 기록 섹션 -->
@@ -143,7 +143,7 @@
         <img
           src="./assets/4page목업.svg"
           alt="4페이지 목업"
-          class="health-image"
+          class="health-image floating bounce-in"
         />
         <div class="health-record-text fade-in">
           <h2>매일 매일 반려동물의<br />건강을 기록해요!</h2>
@@ -167,7 +167,7 @@
           </p>
           <button class="btn btn-light">→ 자세히 보기</button>
         </div>
-        <img src="./assets/5page목업.svg" alt="5페이지 목업" />
+        <img src="./assets/5page목업.svg" alt="5페이지 목업" class="floating bounce-in" />
       </section>
 
       <!-- 팀 소개 섹션 -->
@@ -232,6 +232,22 @@
         // 모든 .fade-in 요소 감시
         const fadeInElements = document.querySelectorAll(".fade-in");
         fadeInElements.forEach((el) => observer.observe(el));
+      });
+    </script>
+
+    <!-- 이미지 bouncy 효과 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        });
+
+        const bounceInElements = document.querySelectorAll(".bounce-in");
+        bounceInElements.forEach((el) => observer.observe(el));
       });
     </script>
 

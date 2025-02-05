@@ -521,3 +521,31 @@ body {
   opacity: 1;
   transform: translateY(0); /* 원래 위치로 이동 */
 }
+
+/* 초기 상태 */
+.bounce-in {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.57, 1.57, 0.79, 1.2);
+}
+
+/* 스크롤 시 나타나는 상태 */
+.bounce-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
