@@ -7,14 +7,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Ownglyph_ParkDaHyun";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font-family: "Pretendard-Regular", sans-serif;
   background-color: #fafafa;
@@ -319,19 +311,10 @@ html,
   height: auto;
 }
 
-.team-title {
-  font-size: 144px;
-  font-family: "Ownglyph PDH", Pretendard-Regular;
-  font-weight: 400;
-  margin: 0;
-}
-
-.text-little {
-  color: #6ea8fe;
-}
-
-.text-pet {
-  color: #afa897;
+.text-logo {
+  width: 80%;
+  height: auto;
+  margin-top: 16px;
 }
 
 .animal-group {
