@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리틀펫 - 소동물 반려인을 위한 특별한 공간</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="70"
+    tabindex="0"
+  >
+    <div class="main-container">
+      <!-- 내비게이션 바 -->
+      <header class="navbar-container" id="navbar">
+        <div class="logo">
+          <img
+            src="./assets/리틀펫 가로 로고.svg"
+            alt="리틀펫 로고"
+            class="logo-text"
+          />
+        </div>
+        <nav class="menu">
+          <a href="#" class="menu-item">홈</a>
+          <a href="#home" class="menu-item">개요</a>
+          <a href="#features" class="menu-item">기능 소개</a>
+          <a href="https://github.com" class="menu-item" target="_blank">
+            <img
+              src="./assets/GitHub.svg"
+              alt="GitHub 아이콘"
+              class="menu-icon"
+            />
+            GitHub
+          </a>
+          <a href="#quick-access" class="menu-item">리틀펫 바로 가기</a>
+        </nav>
+      </header>
+
+      <!-- 인트로 섹션 -->
+      <section id="home" class="intro-section">
+        <div class="intro-image">
+          <img src="./assets/1page목업.svg" alt="1페이지 목업" />
+        </div>
+        <div class="intro-text">
+          <h1>
+            소동물 반려인을 위한<br />
+            <span class="highlight-text">특별한</span> 공간,
+          </h1>
+        </div>
+      </section>
+
+      <!-- 주요 기능 섹션 -->
+      <section id="overview" class="feature-section">
+        <div class="feature-text">
+          <h2>
+            당신의 반려 소동물을 위한
+            <span class="highlight-text">최적의</span> 공간,
+          </h2>
+        </div>
+        <img src="./assets/2page목업.svg" alt="2페이지 목업" />
+      </section>
+
+      <!-- 기능 설명 섹션 -->
+      <!-- 커뮤니티 섹션 -->
+      <section id="features" class="description-section bg-primary text-light">
+        <div class="description-text">
+          <h2>함께하는 이들이 있으니까,</h2>
+          <p>
+            초보 반려인을 위한 관리 방법 가이드부터 <br />
+            여러 반려인들과 경험을 나누며 재밌는 챌린지에 참여할 수 있는
+            커뮤니티까지.
+          </p>
+          <button class="btn btn-light">→ 자세히 보기</button>
+        </div>
+        <img src="./assets/3page목업.svg" alt="3페이지 목업" />
+      </section>
+
+      <!-- 건강 기록 섹션 -->
+      <section class="health-record-section">
+        <img
+          src="./assets/4page목업.svg"
+          alt="4페이지 목업"
+          class="health-image"
+        />
+        <div class="health-record-text">
+          <h2>매일 매일 반려동물의<br />건강을 기록해요!</h2>
+          <p>
+            반려동물의 상태를 꼼꼼하게 기록하세요. <br />
+            리틀펫에서는 우리 작은 동물 친구들의 건강을 <br />
+            체계적으로 관리할 수 있습니다.
+          </p>
+          <button class="btn btn-primary">→ 자세히 보기</button>
+        </div>
+      </section>
+
+      <!-- 병원 찾기 섹션 -->
+      <section class="hospital-section bg-primary text-light">
+        <div class="description-text">
+          <h2>근처 소동물 전문 병원을<br />바로바로 찾아보세요!</h2>
+          <p>
+            반려동물이 아플 때, 소동물 전문 병원의 위치와 <br />
+            상세 정보를 빠르게 확인하고 적절한 진료 병원을 <br />
+            선택할 수 있어요.
+          </p>
+          <button class="btn btn-light">→ 자세히 보기</button>
+        </div>
+        <img src="./assets/5page목업.svg" alt="5페이지 목업" />
+      </section>
+
+      <!-- 팀 소개 섹션 -->
+      <section class="team-section">
+        <div class="team-header">
+          <div class="team-logo-group">
+            <img src="./assets/로고.svg" alt="로고 아이콘" class="team-logo" />
+            <h1 class="team-title">
+              리틀<span class="text-secondary">펫</span>
+            </h1>
+            <img
+              src="./assets/동물 모음.png"
+              alt="동물 모음 이미지"
+              class="animal-group"
+            />
+          </div>
+          <img
+            src="./assets/폰 노트북 목업.svg"
+            alt="폰 노트북 목업"
+            class="team-mockup"
+          />
+        </div>
+
+        <div class="team-details">
+          <div class="team-stack">
+            <h2 class="stack-title">Development Stack</h2>
+            <div class="stack-item">
+              <span>Web</span>
+              <img src="./assets/React-icon.svg" alt="React 아이콘" />
+            </div>
+            <div class="stack-item">
+              <span>Backend</span>
+              <img src="./assets/spring-rogo.svg" alt="Spring 아이콘" />
+            </div>
+          </div>
+
+          <div class="team-members">
+            <div>PM | 조민경</div>
+            <div>Design | 여채현</div>
+            <div>FE | 한채연 김규리</div>
+            <div>BE | 서재준 강건희 김지웅 심은지 황효은</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
