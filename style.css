@@ -41,10 +41,10 @@ html,
 
 /* 버튼 스타일 */
 .btn {
-  padding: 16px 36px;
+  padding: 14px 42px;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -65,6 +65,31 @@ html,
 .btn:hover {
   filter: brightness(0.85);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 반응형 스타일 - 모바일 (최대 767px) */
+@media (max-width: 767px) {
+  .btn {
+    padding: 12px 32px; /* 패딩 줄이기 */
+    font-size: 16px; /* 폰트 크기 줄이기 */
+    border-radius: 40px; /* 필요에 따라 조정 */
+  }
+
+  .btn-primary {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* 태블릿 - 중간 해상도 */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .btn {
+    padding: 12px 36px;
+    font-size: 20px;
+  }
 }
 
 /* 내비게이션 스타일 */
@@ -226,7 +251,7 @@ html,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 96px;
+  padding: 100px 200px;
   gap: 48px;
 }
 
@@ -262,7 +287,7 @@ html,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 96px;
+  padding: 100px 200px;
   gap: 48px;
   background-color: #fafafa;
 }
