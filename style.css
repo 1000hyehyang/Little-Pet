@@ -15,16 +15,18 @@
   font-style: normal;
 }
 
-.team-title {
-  font-family: "Ownglyph_ParkDaHyun", sans-serif;
-}
-
 body {
   font-family: "Pretendard-Regular", sans-serif;
   background-color: #fafafa;
   color: #262627;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+body,
+html,
+.main-container {
   overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
@@ -170,6 +172,7 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin: 40px;
 }
 
 .intro-image img {
@@ -221,6 +224,7 @@ body {
   width: 480px;
   height: auto;
   max-width: 100%;
+  margin-top: 20px;
 }
 
 /* 기능 설명 섹션 */
