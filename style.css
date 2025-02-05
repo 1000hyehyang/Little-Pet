@@ -495,6 +495,13 @@ body {
     gap: 16px;
   }
 
+  .team-logo-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
   .team-title {
     font-size: 48px;
   }
@@ -518,6 +525,37 @@ body {
     font-size: 18px;
     text-align: center;
   }
+}
+
+/* 푸터 스타일 */
+.footer {
+  background-color: #262627;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 상하 중앙 정렬 */
+  flex-direction: column; /* 세로 방향 배치 */
+  padding: 24px;
+}
+
+.footer-logo {
+  height: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-brand {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 24px;
+  padding-top: 12px;
 }
 
 /* 초기 상태 */
