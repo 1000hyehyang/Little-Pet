@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>리틀펫</title>
+    <!-- 파비콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- BootStrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- 커스텀 CSS -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="70"
+    tabindex="0"
+  >
+    <!-- 내비게이션 바 -->
+    <header class="navbar-container navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <!-- 로고 -->
+        <a class="navbar-brand logo" href="#">
+          <img
+            src="./assets/리틀펫 가로 로고.svg"
+            alt="리틀펫 로고"
+            class="logo-text"
+          />
+        </a>
+
+        <!-- 토글 버튼 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="메뉴 열기"
+        >
+          <span class="navbar-toggler-icon custom-toggler-icon"></span>
+        </button>
+
+        <!-- 메뉴 -->
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link menu-item" href="#">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item" href="#home">개요</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item" href="#features">기능 소개</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link menu-item"
+                href="https://github.com/Little-pet"
+                target="_blank"
+              >
+                <img
+                  src="./assets/GitHub.svg"
+                  alt="GitHub 아이콘"
+                  class="menu-icon"
+                />
+                GitHub
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item" href="#quick-access"
+                >리틀펫 바로 가기</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 메인 컨텐츠 (전체폭 적용) -->
+    <!-- 기존의 .container 대신 .main-container 클래스를 사용하여 100% 폭으로 채움 -->
+    <div class="main-container" data-layer="개요">
+      <div class="MacbookAir1" data-layer="MacBook Air - 1">
+        <div data-layer="리틀펫, 왜 필요한가요?">
+          <span class="title-text blue">리틀펫</span>
+          <span class="title-text white">, 왜 필요한가요?</span>
+        </div>
+        <img
+          class="arrow"
+          data-layer="화살표"
+          src="./assets/화살표.png"
+          alt="화살표"
+        />
+      </div>
+
+      <div class="MacbookAir2" data-layer="MacBook Air - 2">
+        <div
+          class="text-center"
+          data-layer="소동물은 햄스터, 토끼, 고슴도치 등 몸집이 작은 동물을 의미해요!"
+        >
+          <span class="text-48 text-dark">소동물은 </span>
+          <span class="text-48 text-blue">햄스터</span>
+          <span class="text-48 text-dark">, </span>
+          <span class="text-48 text-blue">토끼</span>
+          <span class="text-48 text-dark">, </span>
+          <span class="text-48 text-blue">고슴도치</span>
+          <span class="text-48 text-dark">
+            등<br />몸집이 작은 동물을 의미해요!</span
+          >
+        </div>
+        <img
+          class="animal-collection"
+          data-layer="동물 모음"
+          src="./assets/동물 모음.png"
+          alt="동물 모음"
+        />
+      </div>
+
+      <div class="MacbookAir3" data-layer="MacBook Air - 3">
+        <div
+          class="text-center"
+          data-layer="작은 크기와 귀여운 외모로 많은 사랑을 받고 있어요."
+        >
+          <span class="text-48 text-blue">작은</span>
+          <span class="text-48 text-dark"> 크기와 </span>
+          <span class="text-48 text-blue">귀여운</span>
+          <span class="text-48 text-dark">
+            외모로 <br />많은 사랑을 받고 있어요.</span
+          >
+        </div>
+      </div>
+
+      <div class="MacbookAir4" data-layer="MacBook Air - 4">
+        <div
+          class="layer4-text"
+          data-layer="최근에는 더 많은 사람들이 소동물을 가족으로 맞이하고 있어요!"
+        >
+          <span class="text-48 text-dark">
+            최근에는 더 많은 사람들이 <br />소동물을
+          </span>
+          <span class="text-48 text-blue">가족으로</span>
+          <span class="text-48 text-dark"> 맞이하고 있어요!</span>
+        </div>
+        <img
+          class="stats-graph"
+          data-layer="통계 그래프"
+          src="./assets/통계 그래프.png"
+          alt="통계 그래프"
+        />
+      </div>
+
+      <div class="MacbookAir5" data-layer="MacBook Air - 5">
+        <div
+          class="text-center"
+          data-layer="그런데, 소동물을 키우는 게 막막할 때가 많아요."
+        >
+          <span class="text-48 text-white">
+            그런데, 소동물을 키우는 게<br />
+          </span>
+          <span class="text-48 text-red">막막할 때</span>
+          <span class="text-48 text-white">가 많아요.</span>
+        </div>
+      </div>
+
+      <div class="MacbookAir6" data-layer="MacBook Air - 6">
+        <div class="Group2" data-layer="Group 2">
+          <!-- 채팅 1 -->
+          <div class="chat-box chat-box-1" data-layer="채팅">
+            <div class="chat-bubble chat-bubble-normal">
+              <div
+                class="chat-text chat-text-1"
+                data-layer="처음 햄스터를 키우려는데 어떤 준비가 필요할까요?"
+              >
+                <span class="text-40 text-blue">처음</span>
+                <span class="text-40 text-black">
+                  햄스터를 키우려는데 어떤 준비가 필요할까요?</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 채팅 2 -->
+          <div class="chat-box chat-box-2" data-layer="채팅">
+            <div class="chat-bubble chat-bubble-rev">
+              <div
+                class="chat-text chat-text-2"
+                data-layer="우리 동네에 소동물을 전문적으로 진료하는 병원이..."
+              >
+                <span class="text-40 text-dark">우리 동네에 </span>
+                <span class="text-40 text-blue">소동물을 전문적으로</span>
+                <span class="text-40 text-dark"> 진료하는 병원이...</span>
+              </div>
+            </div>
+          </div>
+          <!-- 채팅 3 -->
+          <div class="chat-box chat-box-3" data-layer="채팅">
+            <div class="chat-bubble chat-bubble-rev">
+              <div
+                class="chat-text chat-text-3"
+                data-layer="고슴도치가 아플 때는 어떻게 해야하죠...?"
+              >
+                <span class="text-40 text-dark">고슴도치가 </span>
+                <span class="text-40 text-blue">아플 때는</span>
+                <span class="text-40 text-dark"> 어떻게 해야하죠...?</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="MacbookAir7" data-layer="MacBook Air - 7">
+        <div
+          class="text-center"
+          data-layer="소동물과 관련된 정보와 서비스가 부족하고 궁금한 게 많아도 물어볼 곳이 없어요."
+        >
+          <span class="text-48 text-white">소동물과 관련된 정보와 </span>
+          <span class="text-48 text-red">서비스가 부족하고<br /></span>
+          <span class="text-48 text-white">궁금한 게 많아도 </span>
+          <span class="text-48 text-red">물어볼 곳이 없어요.</span>
+        </div>
+      </div>
+
+      <div class="MacbookAir8" data-layer="MacBook Air - 8">
+        <div class="layer8-text" data-layer="리틀펫이 시작됐어요!">
+          <span class="text-96 text-blue">리틀펫</span>
+          <span class="text-96 text-dark">이 시작됐어요!</span>
+        </div>
+        <div class="layer8-heading" data-layer="그래서">그래서</div>
+        <img
+          class="phone-mockup"
+          data-layer="폰 목업"
+          src="./assets/폰 목업.svg"
+          alt="폰 목업"
+        />
+      </div>
+
+      <div class="MacbookAir9" data-layer="MacBook Air - 9">
+        <img
+          class="Rectangle185"
+          data-layer="Rectangle 185"
+          src="./assets/필요했던 서비스 배경 이미지.svg"
+          alt="Rectangle 185"
+        />
+        <div class="service-text" data-layer="꼭 필요했던 서비스">
+          꼭 필요했던 서비스
+        </div>
+      </div>
+
+      <div class="MacbookAir10" data-layer="MacBook Air - 10">
+        <img
+          class="tech-devices"
+          data-layer="테크기기 모음"
+          src="./assets/테크기기 모음.svg"
+          alt="테크기기 모음"
+        />
+        <div
+          class="conclusion-text"
+          data-layer="소동물과 함께하는 당신을 위해, 리틀펫이 함께합니다."
+        >
+          소동물과 함께하는 당신을 위해,<br />리틀펫이 함께합니다.
+        </div>
+        <a href="#" class="detail-button" data-layer="자세히 보기 버튼">
+          <div class="button-text" data-layer="→ 리틀펫 바로가기">
+            → 리틀펫 바로가기
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 푸터 섹션 -->
+    <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row py-4">
+          <!-- 로고 및 소개 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="footer-brand">
+              <img
+                src="./assets/리틀펫 가로 로고.svg"
+                alt="리틀펫 로고"
+                class="footer-logo"
+              />
+            </h5>
+            <p>
+              리틀펫은 소동물 반려인을 위한 정보와 커뮤니티 공간을 제공합니다.
+              함께하는 즐거움을 경험해 보세요!
+            </p>
+          </div>
+        </div>
+
+        <!-- 저작권 정보 -->
+        <div class="footer-bottom text-center py-3">
+          <p class="mb-0">
+            © 2025 UMC 7th Demo Day Project 리틀펫. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (선택 사항) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,439 @@
+/* 기본 폰트 설정 */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Pretendard-Regular", sans-serif;
+  background-color: #fafafa;
+  color: #262627;
+}
+
+/* 호버 효과 추가 */
+.detail-button:hover {
+  filter: brightness(0.85);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+a.detail-button {
+  text-decoration: none;
+}
+
+/* 내비게이션 바 (우선순위 높임) */
+.navbar-container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  background-color: #262627 !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15) !important;
+  padding: 12px 24px !important;
+}
+
+.navbar-brand {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar-brand img {
+  height: 22px !important;
+  width: auto !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  padding: 4px 8px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler-icon.custom-toggler-icon {
+  background-image: none !important;
+  background-color: #fafafa !important;
+  width: 20px !important;
+  height: 2px !important;
+  position: relative;
+}
+
+.navbar-toggler-icon.custom-toggler-icon::before,
+.navbar-toggler-icon.custom-toggler-icon::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0;
+  width: 20px !important;
+  height: 2px !important;
+  background-color: #fafafa !important;
+}
+
+.navbar-toggler-icon.custom-toggler-icon::before {
+  top: -6px !important;
+}
+
+.navbar-toggler-icon.custom-toggler-icon::after {
+  top: 6px !important;
+}
+
+/* 기본적으로 토글 버튼 숨김 */
+.navbar-toggler {
+  display: none !important;
+}
+
+/* 모바일에서만 토글 버튼 표시 */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: flex !important;
+  }
+}
+
+.nav-link,
+.navbar-nav .nav-item .nav-link {
+  color: #fafafa !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.navbar-nav .nav-item .nav-link:hover {
+  color: #6ea8fe !important;
+}
+
+/* 메인 컨텐츠용 컨테이너 (섹션 중앙 정렬) */
+.main-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 섹션별 스타일 (최대 1280px, 중앙 정렬) */
+.MacbookAir1,
+.MacbookAir2,
+.MacbookAir3,
+.MacbookAir4,
+.MacbookAir5,
+.MacbookAir6,
+.MacbookAir7,
+.MacbookAir8,
+.MacbookAir9,
+.MacbookAir10 {
+  width: 100%;
+}
+
+.MacbookAir1 {
+  height: 832px;
+  padding: 387px 423px 126px 423px;
+  background: #262627;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 166px;
+}
+
+.MacbookAir2 {
+  height: 832px;
+  padding: 319px 240px 78px 240px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 109px;
+}
+
+.MacbookAir3 {
+  height: 832px;
+  padding: 0 389px;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MacbookAir4 {
+  height: 832px;
+  position: relative;
+  background: #fafafa;
+}
+
+.MacbookAir5 {
+  height: 832px;
+  padding: 0 388px 0 389px;
+  background: #262627;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MacbookAir6 {
+  height: 832px;
+  padding: 157px 121px 156.18px 121px;
+  background: #262627;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MacbookAir7 {
+  height: 832px;
+  padding: 0 243px 0 244px;
+  background: #262627;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MacbookAir8,
+.MacbookAir9 {
+  height: 832px;
+  position: relative;
+  background: #fafafa;
+}
+
+.MacbookAir10 {
+  height: 1140px;
+  position: relative;
+  background: #fafafa;
+}
+
+/* 텍스트 기본 클래스 */
+.title-text,
+.text-48 {
+  font-size: 48px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.text-96 {
+  font-size: 96px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.text-40 {
+  font-size: 40px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+/* 색상 클래스 */
+.blue,
+.text-blue {
+  color: #6ea8fe;
+}
+.white,
+.text-white {
+  color: #fafafa;
+}
+.text-dark {
+  color: #262627;
+}
+.text-red {
+  color: #c76b6b;
+}
+.text-black {
+  color: black;
+}
+
+/* 정렬 */
+.text-center {
+  text-align: center;
+}
+
+/* 이미지 및 기타 요소 */
+.arrow {
+  width: 96px;
+  height: 96px;
+}
+.animal-collection {
+  width: 800px;
+  height: 212px;
+}
+.stats-graph {
+  width: 588px;
+  height: 503px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 164px;
+}
+.phone-mockup {
+  width: 750px;
+  height: 562px;
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  top: 102px;
+}
+.Rectangle185 {
+  width: 100%;
+  height: 237px;
+  position: absolute;
+  left: 0;
+  top: 298px;
+  background: linear-gradient(0deg, #d9d9d9 0%, #d9d9d9 100%);
+}
+.tech-devices {
+  width: 899px;
+  height: 631px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 53px;
+}
+
+/* 레이어 위치 조정 */
+.layer4-text {
+  position: absolute;
+  left: 50%;
+  top: 359px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.layer8-text {
+  position: absolute;
+  left: 50%;
+  top: 660px;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+.layer8-heading {
+  position: absolute;
+  left: 20%;
+  top: 172px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #262627;
+  font-size: 144px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.service-text {
+  width: 818px;
+  height: 112px;
+  position: absolute;
+  left: 50%;
+  top: 361px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fafafa;
+  font-size: 96px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.conclusion-text {
+  position: absolute;
+  left: 50%;
+  top: 759px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #262627;
+  font-size: 48px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+/* 버튼 스타일 */
+.detail-button {
+  padding: 24px 64px;
+  position: absolute;
+  left: 50%;
+  top: 962px;
+  transform: translateX(-50%);
+  background: #6ea8fe;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.button-text {
+  color: #fafafa;
+  font-size: 32px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+/* 채팅 영역 (최신 버전) */
+.Group2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+.chat-box {
+  margin-bottom: 40px;
+  position: relative;
+}
+.chat-bubble {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.chat-bubble-normal {
+  background-image: url("./assets/챗창.png");
+}
+.chat-bubble-rev {
+  background-image: url("./assets/챗창(rev).png");
+}
+.chat-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+
+/* 푸터 스타일 */
+.footer {
+  background-color: #262627;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+}
+.footer-logo {
+  height: 24px;
+  margin-bottom: 16px;
+}
+.footer-brand {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 24px;
+  padding-top: 12px;
+}
