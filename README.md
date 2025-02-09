@@ -1,2 +1,21 @@
 # Little-Pet
- 
+
+![이미지](./landing/노션%20배너.png)
+![이미지](./landing/landing%20page-1.png)
+![이미지](./landing/landing%20page-2.png)
+![이미지](./landing/landing%20page-3.png)
+![이미지](./landing/landing%20page-4.png)
+![이미지](./landing/landing%20page-8.png)
+![이미지](./landing/landing%20page-9.png)
+![이미지](./landing/landing%20page-11.png)
+![이미지](./landing/landing%20page-12.png)
+![이미지](./landing/landing%20page-13.png)
+![이미지](./landing/landing%20page-14.png)
+![이미지](./landing/landing%20page-15.png)
+![이미지](./landing/landing%20page-16.png)
+![이미지](./landing/landing%20page-17.png)
+![이미지](./landing/landing%20page-18.png)
+![이미지](./landing/landing%20page-19.png)
+![이미지](./landing/팀%20소개.png)
+![이미지](./landing/landing%20page-20.png)
+![이미지](./landing/Footer.png)
